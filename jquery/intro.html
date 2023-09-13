@@ -12,6 +12,8 @@
     <p>This is a paragraph. Click button to make the 
         paragraph to hide.
     </p>
+    <p class="p1">Click me!!!</p>
+    <p id="p2">Enter this second paragraph</p>
 </body>
 <script>
     $(document).ready(function(){
@@ -19,6 +21,13 @@
      $("button").click(function(){
         //hides the paragraph
          $("p").hide();
+     });
+     //Double click and hide paragraph with class p1
+     $(".p1").dblclick(function(){
+        $(this).hide();
+     });
+     $("#p2").mouseenter(function(){
+        alert("You have enter p2");
      });
     });  
  </script>
