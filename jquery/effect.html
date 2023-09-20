@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>jQuery Effects</title>
+    <style>
+        .square{
+            width:80px;
+            height:80px;
+            display:none;
+        }
+        #flex{
+            display:flex;
+            justify-content:space-evenly;
+
+        }
+        #div1{
+            background-color:pink;
+        }
+        #div2{
+            background-color:palevioletred;
+        }
+        #div3{
+            background-color:palegreen;
+        }
+    </style>
 </head>
 <body>
+    <h1>jQuery Effects</h1>
     <div>
-        <h1>Hide & Show</h1>
+        <h2>Hide & Show</h2>
         <button id="hide">Hind</button>
         <button id="show">Show</button>
         <p>Click a button to hide or show this paragraph</p>
+    </div>
+    <div>
+        <h2>Fading Methods</h2>
+        <button id="fade">Fade In</button>
+        <div id="flex">
+        <div id="div1" class="square"></div>
+        <div id="div2" class="square"></div>
+        <div id="div3" class="square"></div>
+        </div>
     </div>
 </body>
 <script>
@@ -20,6 +51,15 @@
     })
     $("#show").click(function(){
         $("p").show();
+    })
+    $("#fade").click(function(){
+        $("#div1").fadeIn();
+    })
+    $("#fade").click(function(){
+        $("#div2").fadeIn("slow");
+    })
+    $("#fade").click(function(){
+        $("#div3").fadeIn("3000");
     })
 </script>
 </html>
