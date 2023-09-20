@@ -7,17 +7,19 @@
     <title>jQuery Effects</title>
     <style>
         .square{
-            width:80px;
-            height:80px;
             display:none;
         }
-        #div1{
+        .square,.square1{
+            width:80px;
+            height:80px;
+        }
+        #div1,#div4{
             background-color:pink;
         }
-        #div2{
+        #div2,#div5{
             background-color:palevioletred;
         }
-        #div3{
+        #div3,#div6{
             background-color:palegreen;
         }
     </style>
@@ -30,13 +32,17 @@
         <button id="show">Show</button>
         <p>Click a button to hide or show this paragraph</p>
     </div>
-    <div>
-        <h2>Fading Methods</h2>
-        <button id="fade">Fade In</button>
+    <h2>Fading method</h2>
+        <h3>fadeIn() method</h3>
+        <button id="fadeIn">Fade In</button><br><br>
         <div id="div1" class="square"></div><br>
         <div id="div2" class="square"></div><br>
         <div id="div3" class="square"></div>
-    </div>
+        <h3>fadeOut() method</h3>
+        <button id="fadeOut">FadeOut</button><br><br>
+        <div id="div4" class="square1"></div><br>
+        <div id="div5" class="square1"></div><br>
+        <div id="div6" class="square1"></div>
 </body>
 <script>
 $(document).ready(function(){
@@ -46,10 +52,15 @@ $(document).ready(function(){
     $("#show").click(function(){
         $("p").show();
     });
-    $("#fade").click(function(){
+    $("#fadeIn").click(function(){
         $("#div1").fadeIn();
         $("#div2").fadeIn("slow");
         $("#div3").fadeIn(3000);
+    });
+    $("#fadeOut").click(function(){
+        $("#div4").fadeOut();
+        $("#div5").fadeOut("slow");
+        $("#div6").fadeOut(3000);
     });
 });
 </script>
