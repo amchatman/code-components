@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>jQuery Effects</title>
 </head>
 <body>
-    
+    <div>
+        <h1>Hide & Show</h1>
+        <button id="hide">Hind</button>
+        <button id="show">Show</button>
+        <p>Click a button to hide or show this paragraph</p>
+    </div>
 </body>
+<script>
+    $("#hide").click(function(){
+        $("p").hide();
+    })
+    $("#show").click(function(){
+        $("p").show();
+    })
+</script>
 </html>
