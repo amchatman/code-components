@@ -11,11 +11,6 @@
             height:80px;
             display:none;
         }
-        #flex{
-            display:flex;
-            justify-content:space-evenly;
-
-        }
         #div1{
             background-color:pink;
         }
@@ -38,28 +33,24 @@
     <div>
         <h2>Fading Methods</h2>
         <button id="fade">Fade In</button>
-        <div id="flex">
-        <div id="div1" class="square"></div>
-        <div id="div2" class="square"></div>
+        <div id="div1" class="square"></div><br>
+        <div id="div2" class="square"></div><br>
         <div id="div3" class="square"></div>
-        </div>
     </div>
 </body>
 <script>
+$(document).ready(function(){
     $("#hide").click(function(){
         $("p").hide();
-    })
+    });
     $("#show").click(function(){
         $("p").show();
-    })
+    });
     $("#fade").click(function(){
         $("#div1").fadeIn();
-    })
-    $("#fade").click(function(){
         $("#div2").fadeIn("slow");
-    })
-    $("#fade").click(function(){
-        $("#div3").fadeIn("3000");
-    })
+        $("#div3").fadeIn(3000);
+    });
+});
 </script>
 </html>
