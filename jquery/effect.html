@@ -9,17 +9,17 @@
         .square{
             display:none;
         }
-        .square,.square1{
+        .square,.square1,.square2{
             width:80px;
             height:80px;
         }
-        #div1,#div4{
+        #div1,#div4,#div7{
             background-color:pink;
         }
-        #div2,#div5{
+        #div2,#div5,#div8{
             background-color:palevioletred;
         }
-        #div3,#div6{
+        #div3,#div6,#div9{
             background-color:palegreen;
         }
     </style>
@@ -44,7 +44,13 @@
         <div id="div5" class="square1"></div><br>
         <div id="div6" class="square1"></div>
 
-    <h2>fadeToggle</h2>
+    <h3>fadeToggle() method</h3>
+    <button id="fadeToggle">Fade In & Fade Out</button>
+    <div id="div7" class="square2"></div><br>
+    <div id="div8" class="square2"></div><br>
+    <div id="div9" class="square2"></div>
+
+    
 </body>
 <script>
 $(document).ready(function(){
@@ -63,6 +69,11 @@ $(document).ready(function(){
         $("#div4").fadeOut();
         $("#div5").fadeOut("slow");
         $("#div6").fadeOut(3000);
+    });
+    $("#fadeToggle").click(function(){
+        $("#div7").fadeToggle();
+        $("#div8").fadeToggle("slow");
+        $("#div9").fadeToggle(3000);
     });
 });
 </script>
