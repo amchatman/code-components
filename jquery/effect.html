@@ -9,17 +9,17 @@
         .square{
             display:none;
         }
-        .square,.square1,.square2{
+        .square,.square1,.square2,.square3{
             width:80px;
             height:80px;
         }
-        #div1,#div4,#div7{
+        #div1,#div4,#div7,#div10{
             background-color:pink;
         }
-        #div2,#div5,#div8{
+        #div2,#div5,#div8,#div11{
             background-color:palevioletred;
         }
-        #div3,#div6,#div9{
+        #div3,#div6,#div9,#div12{
             background-color:palegreen;
         }
     </style>
@@ -38,17 +38,26 @@
         <div id="div1" class="square"></div><br>
         <div id="div2" class="square"></div><br>
         <div id="div3" class="square"></div>
+
         <h3>fadeOut() method</h3>
         <button id="fadeOut">FadeOut</button><br><br>
         <div id="div4" class="square1"></div><br>
         <div id="div5" class="square1"></div><br>
         <div id="div6" class="square1"></div>
 
-    <h3>fadeToggle() method</h3>
-    <button id="fadeToggle">Fade In & Fade Out</button>
-    <div id="div7" class="square2"></div><br>
-    <div id="div8" class="square2"></div><br>
-    <div id="div9" class="square2"></div>
+        <h3>fadeToggle() method</h3>
+       <button id="fadeToggle">Fade In & Fade Out</button><br><br>
+        <div id="div7" class="square2"></div><br>
+        <div id="div8" class="square2"></div><br>
+        <div id="div9" class="square2"></div>
+
+        <h3>fadeTo() method</h3>
+        <button id="fadeTo">Fade To</button><br><br>
+        <div id="div10" class="square3"></div><br>
+        <div id="div11" class="square3"></div><br>
+        <div id="div12" class="square3"></div>
+
+
 
     
 </body>
@@ -74,6 +83,11 @@ $(document).ready(function(){
         $("#div7").fadeToggle();
         $("#div8").fadeToggle("slow");
         $("#div9").fadeToggle(3000);
+    });
+    $("#fadeTo").click(function(){
+        $("#div10").fadeTo("slow",0.15);
+        $("#div11").fadeTo("slow",0.4);
+        $("#div11").fadeTo("slow",0.7);
     });
 });
 </script>
