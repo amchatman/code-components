@@ -1,0 +1,29 @@
+body{
+    background:#C4EEF2;
+}
+.square{
+    display:none;
+}
+.square,.square1,.square2,.square3{
+    width:80px;
+    height:80px;
+}
+#div1,#div4,#div7,#div10{
+    background-color:#F2294E;
+}
+#div2,#div5,#div8,#div11{
+    background-color:#F24484;
+}
+#div3,#div6,#div9,#div12{
+    background-color:#F2B84B;
+}
+#down,#panel{
+    background-color:#F27F1B;
+    text-align:center;
+    border:1px solid black;
+    padding:10px;
+}
+#panel{
+    display:none;
+    padding:30px;
+}
