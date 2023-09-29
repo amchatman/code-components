@@ -8,6 +8,9 @@ body{
     width:80px;
     height:80px;
 }
+.slide{
+    margin-top:10px;
+}
 #div1,#div4,#div7,#div10{
     background-color:#F2294E;
 }
@@ -17,13 +20,16 @@ body{
 #div3,#div6,#div9,#div12{
     background-color:#F2B84B;
 }
-#down,#panel{
+#down,#panel,#up,#panelup,#toggle,#panelToggle{
     background-color:#F27F1B;
     text-align:center;
     border:1px solid black;
     padding:10px;
 }
-#panel{
+#panel,#panelup,#panelToggle{
     display:none;
     padding:30px;
+}
+#panelup{
+    display:block;
 }

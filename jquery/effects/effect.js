@@ -28,4 +28,10 @@ $(document).ready(function(){
     $("#down").click(function(){
         $("#panel").slideDown();
     });
+    $("#up").click(function(){
+        $("#panelup").slideUp();
+    })
+    $("#toggle").click(function(){
+        $("#panelToggle").slideToggle("slow");
+    });
 });
