@@ -6,6 +6,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>jQuery Effects</title>
     <style>
+        body{
+            background:skyblue;
+        }
         .square{
             display:none;
         }
@@ -21,6 +24,15 @@
         }
         #div3,#div6,#div9,#div12{
             background-color:palegreen;
+        }
+        #down,#panel{
+            background-color:olive;
+            text-align:center;
+            border:1px solid black;
+            padding:10px;
+        }
+        #panel{
+            display:none;
         }
     </style>
 </head>
@@ -62,11 +74,11 @@
     <hr>
     <div>
         <h2>Jquery Slide</h2>
-        
+        <h3>slideDown() method</h3>
+        <div id="down">Click to slide down</div>
+        <div id="panel">Hello this div slide down</div>
     </div>  
-
-
-    
+   
 </body>
 <script>
 $(document).ready(function(){
